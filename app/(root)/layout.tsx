@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar";
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <main className="font-work-sans">
+        <main className="font-work-sans" suppressHydrationWarning>
             <Navbar/>
             {children}
         </main>
